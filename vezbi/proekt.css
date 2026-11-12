@@ -1,0 +1,402 @@
+
+/* SITE STRANI */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF8ED;
+    color: #770523;
+}
+
+/* Naslovi */
+
+h1, h2, h3, h4 {
+    color: #770523;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    margin-top: 25px;
+    margin-bottom: 18px;
+}
+
+/* header  */
+
+.jumbotron {
+    background-color: #FAD2E1;
+    padding: 30px 20px;
+    border-radius: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #770523;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 19px;
+    color: #770523;
+    margin-bottom: 25px;
+}
+
+
+/* nav */
+
+.navbar {
+    background-color: #770523;
+    padding: 18px 15px;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: #DD4E28;
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #FFFFFF;
+    margin-left: 12px;
+    padding: 9px 15px;
+    border-radius: 25px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #D81A67;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    background-color: #FAD2E1;
+    color: #770523;
+    font-weight: bold;
+}
+
+
+
+
+/* btn*/
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #DD4E28;
+    border-color: #DD4E28;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #770523;
+    border-color: #770523;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #D0D996;
+    border-color: #D0D996;
+    color: #770523;
+}
+
+.btn-secondary:hover {
+    background-color: #770523;
+    border-color: #770523;
+    color: white;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn.btn-sm {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+
+/* proekt.html */
+
+/* Welcome slika */
+
+.welcome-slika {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* LOGIN */
+
+.login-pozadina {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(119, 5, 35, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-forma {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-forma label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#porakaLogin {
+    color: #770523;
+    font-weight: bold;
+}
+
+
+/* Karticki so destinacii */
+
+.card {
+    background-color: white;
+    border: 1px solid #FAD2E1;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(119, 5, 35, 0.10);
+}
+
+.card:hover {
+    box-shadow: 0 10px 25px rgba(119, 5, 35, 0.18);
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 22px;
+}
+
+.card-title {
+    color: #D0D996;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555555;
+    line-height: 1.7;
+}
+
+
+/*  destination.html */
+
+/* Forma za izbor na destinacija /survey*/
+
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #FAD2E1;
+    box-shadow: 0 5px 20px rgba(119, 5, 35, 0.08);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+label {
+    font-weight: bold;
+    color: #D0D996;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border: 2px solid #FAD2E1;
+    border-radius: 12px;
+    padding: 12px;
+    height: auto;
+    background-color: #FFFDF9;
+    color: #770523;
+}
+
+.form-control:focus {
+    border-color: #D81A67;
+    box-shadow: 0 0 0 3px rgba(216, 26, 103, 0.12);
+}
+
+/* Poraka pri izbor na destinacija */
+
+#poraka {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* blog.html */
+
+/* Sekcii za gradovite */
+
+main section {
+    padding: 25px 0;
+}
+
+main section h2 {
+    display: inline-block;
+    background-color: #D0D996;
+    padding: 12px 25px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+/* Sliki od destinaciite */
+
+main section img {
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(119, 5, 35, 0.15);
+}
+
+/* Tekst za destinaciite */
+
+main section p {
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Lista so znamenitosti */
+
+main section ol {
+    background-color: #FFFFFF;
+    border-left: 6px solid #D81A67;
+    padding: 25px 25px 25px 50px;
+    border-radius: 12px;
+}
+
+main section ol li {
+    padding: 5px 0;
+    color: #770523;
+}
+
+/* Linija pomegju gradovite */
+
+hr {
+    border-top: 2px solid #FAD2E1;
+    margin: 35px 0;
+}
+
+
+/* survey.html */
+
+/* Pole za komentar i predlog */
+
+textarea.form-control {
+    min-height: 110px;
+}
+
+/* Poraka po isprakjanje anketa */
+
+#porakaAnketa {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Visitor Comments */
+
+#komentari .card {
+    background-color: #FFFDF9;
+    border-left: 5px solid #D81A67;
+    padding: 20px;
+}
+
+#komentari h5 {
+    color: #770523;
+    font-weight: bold;
+}
+
+#komentari p {
+    color: #555555;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #770523;
+    color: #D0D996;
+    padding: 25px;
+    margin-top: 60px;
+}
+
+/* Logo vo footer */
+
+.footer-slika {
+    width: 180px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Naslov vo footer */
+
+.footer-naslov {
+    color: #FAD2E1;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Tekst vo footer */
+
+footer p {
+    color: #D0D996;
+    margin-bottom: 10px;
+}
+
+
+/* small scr*/
+
+@media (max-width: 768px) {
+
+    .jumbotron {
+        padding: 25px 15px;
+    }
+
+    .jumbotron h1 {
+        font-size: 32px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    main section h2 {
+        font-size: 25px;
+    }
+}

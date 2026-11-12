@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Survey - Travel Planner</title>
+
+   
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="proekt.css">
+</head>
+
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container">
+
+            <a class="navbar-brand" href="proekt.html">
+                Travel Planner
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#meni">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="meni">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="proekt.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="survey.html">
+                            Survey
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+<header class="jumbotron text-center">
+
+    <h1>Travel Preferences Survey</h1>
+
+    <p>
+        Share your travel experiences, favorite destinations
+        and suggestions with us!
+    </p>
+
+</header>
+
+    <main class="container mt-4">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <h3 class="mb-4">Tell Us About Your Travels</h3>
+
+                
+                <form onsubmit="ispratiAnketa(); return false;">
+
+                    
+                    <div class="form-group">
+                        <label for="imeAnketa">Your Name</label>
+                        <input type="text"
+                               class="form-control"
+                               id="imeAnketa"
+                               placeholder="Enter your name">
+                    </div>
+
+                    <!-- omilena dest -->
+                    <div class="form-group">
+                        <label for="omilena">
+                            What is your favorite destination?
+                        </label>
+
+                        <select class="form-control" id="omilena">
+                            <option value="">Select destination</option>
+                            <option value="Paris">Paris</option>
+                            <option value="Rome">Rome</option>
+                            <option value="Santorini">Santorini</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="London">London</option>
+                        </select>
+                    </div>
+
+                    <!-- tip -->
+                    <div class="form-group">
+                        <label for="tipOdmor">
+                            What type of vacation do you prefer?
+                        </label>
+
+                        <select class="form-control" id="tipOdmor">
+                            <option value="">Select vacation type</option>
+                            <option value="City">City break</option>
+                            <option value="Beach">Beach vacation</option>
+                            <option value="Nature">Nature</option>
+                            <option value="Adventure">Adventure</option>
+                        </select>
+                    </div>
+
+                    <!-- budzet -->
+                    <div class="form-group">
+                        <label for="budzetAnketa">
+                            What is your usual travel budget?
+                        </label>
+
+                        <select class="form-control" id="budzetAnketa">
+                            <option value="">Select budget</option>
+                            <option value="Under 500">Under €500</option>
+                            <option value="500-1000">€500 - €1000</option>
+                            <option value="Over 1000">Over €1000</option>
+                        </select>
+                    </div>
+
+                    <!-- ocena -->
+                    <div class="form-group">
+                        <label for="ocena">
+                            How would you rate our website?
+                        </label>
+
+                        <select class="form-control" id="ocena">
+                            <option value="">Select rating</option>
+                            <option value="1">1 - Poor</option>
+                            <option value="2">2 - Fair</option>
+                            <option value="3">3 - Good</option>
+                            <option value="4">4 - Very Good</option>
+                            <option value="5">5 - Excellent</option>
+                        </select>
+                    </div>
+
+                    <!-- komentar -->
+                    <div class="form-group">
+                        <label for="komentar">
+                            Why is this your favorite destination?
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="komentar"
+                                  rows="4"
+                                  placeholder="Share your experience or opinion..."></textarea>
+                    </div>
+
+                    <!-- nova destinacija -->
+                    <div class="form-group">
+                        <label for="predlog">
+                            Which other destinations should we add?
+                        </label>
+
+                        <textarea class="form-control"
+                                  id="predlog"
+                                  rows="3"
+                                  placeholder="Suggest new cities or countries..."></textarea>
+                    </div>
+
+                    
+                    <button type="submit" class="btn btn-primary">
+                        Submit Survey
+                    </button>
+
+                    <button type="reset" class="btn btn-secondary">
+                        Reset
+                    </button>
+
+                </form>
+
+                <!-- poraka -->
+                <p id="porakaAnketa" class="mt-3"></p>
+
+                <hr class="mt-5">
+
+                <!-- kom -->
+                <h3>Visitor Comments</h3>
+                <p>Read what other travelers think!</p>
+
+                <div id="komentari" class="mt-4"></div>
+
+            </div>
+        </div>
+
+    </main>
+
+    
+    <footer class=" text-white text-center p-3">
+
+     <img src="images/footer.jpg"
+         alt="Explore the World"
+         class="footer-slika">
+
+     <p>Discover new places and create unforgettable memories.</p>
+     <p>2026 Travel Planner</p>
+
+    </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <script src="proekt.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel Blog - Travel Planner</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="proekt.css">
+</head>
+
+<body onload="najava()">
+
+    <!-- NAVIGATION -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="proekt.html">
+                Travel Planner
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#meni">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="meni">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="proekt.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="survey.html">
+                            Survey
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HEADER -->
+
+    <header class="jumbotron text-center">
+        <h1>Travel Blog</h1>
+        <p>Discover beautiful destinations and places to visit!</p>
+    </header>
+
+
+    <main class="container">
+
+        <!-- =====================================
+             PARIS
+        ===================================== -->
+
+        <section id="paris" class="mb-5">
+
+            <h2>Paris, France</h2>
+
+            <div class="text-center mb-4">
+
+                <img id="slikaParis"
+                     src="images/paris.jpg"
+                     class="img-fluid mb-3"
+                     width="600"
+                     alt="Paris">
+
+                <!-- BUTTONS -->
+
+                <div class="row mt-3">
+
+                    <div class="col-6 text-left">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="prethodnaSlika('paris')">
+                            Previous
+                        </button>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="slednaSlika('paris')">
+                            Next
+                        </button>
+
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="likeParis()">
+                            Like
+                        </button>
+                        <span id="likesParis">0</span>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="dislikeParis()">
+                            Dislike
+                        </button>
+                        <span id="dislikesParis">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Paris is the capital of France and one of the
+                most popular tourist destinations in Europe.
+                It is famous for its beautiful architecture,
+                museums, fashion and romantic atmosphere.
+            </p>
+
+            <h4>Top 10 Places to Visit</h4>
+
+            <ol>
+                <li>Eiffel Tower</li>
+                <li>Louvre Museum</li>
+                <li>Notre-Dame Cathedral</li>
+                <li>Arc de Triomphe</li>
+                <li>Champs-Elysees</li>
+                <li>Montmartre</li>
+                <li>Disneyland Paris</li>
+                <li>Luxembourg Gardens</li>
+                <li>Seine River</li>
+                <li>Palace of Versailles</li>
+            </ol>
+
+            <a href="destination.html" class="btn btn-primary">
+                Plan Another Trip
+            </a>
+
+        </section>
+
+        <hr>
+
+
+        <!-- =====================================
+             ROME
+        ===================================== -->
+
+        <section id="rome" class="mb-5 mt-5">
+
+            <h2>Rome, Italy</h2>
+
+            <div class="text-center mb-4">
+
+                <img id="slikaRome"
+                     src="images/rome.jpg"
+                     class="img-fluid mb-3"
+                     width="600"
+                     alt="Rome">
+
+                <!-- BUTTONS -->
+
+                <div class="row mt-3">
+
+                    <div class="col-6 text-left">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="prethodnaSlika('rome')">
+                            Previous
+                        </button>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="slednaSlika('rome')">
+                            Next
+                        </button>
+
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="likeRome()">
+                            Like
+                        </button>
+                        <span id="likesRome">0</span>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="dislikeRome()">
+                            Dislike
+                        </button>
+                        <span id="dislikesRome">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Rome is the capital of Italy and a city
+                with a rich history.
+                Visitors can explore ancient Roman monuments,
+                beautiful squares, museums and traditional
+                Italian restaurants.
+            </p>
+
+            <h4>Top 10 Places to Visit</h4>
+
+            <ol>
+                <li>Colosseum</li>
+                <li>Roman Forum</li>
+                <li>Trevi Fountain</li>
+                <li>Pantheon</li>
+                <li>Spanish Steps</li>
+                <li>Vatican Museums</li>
+                <li>St. Peter's Basilica</li>
+                <li>Piazza Navona</li>
+                <li>Castel Sant'Angelo</li>
+                <li>Villa Borghese Gardens</li>
+            </ol>
+
+            <a href="destination.html" class="btn btn-primary">
+                Plan Another Trip
+            </a>
+
+        </section>
+
+        <hr>
+
+
+        <!-- =====================================
+             SANTORINI
+        ===================================== -->
+
+        <section id="santorini" class="mb-5 mt-5">
+
+            <h2>Santorini, Greece</h2>
+
+            <div class="text-center mb-4">
+
+                <img id="slikaSantorini"
+                     src="images/santorini.jpg"
+                     class="img-fluid mb-3"
+                     width="600"
+                     alt="Santorini">
+
+                <!-- BUTTONS -->
+
+                <div class="row mt-3">
+
+                    <div class="col-6 text-left">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="prethodnaSlika('santorini')">
+                            Previous
+                        </button>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="slednaSlika('santorini')">
+                            Next
+                        </button>
+
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="likeSantorini()">
+                            Like
+                        </button>
+                        <span id="likesSantorini">0</span>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="dislikeSantorini()">
+                            Dislike
+                        </button>
+                        <span id="dislikesSantorini">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Santorini is a beautiful Greek island
+                known for its white houses, blue domes
+                and amazing views of the Aegean Sea.
+                It is a popular destination for beaches,
+                sunsets and traditional Greek food.
+            </p>
+
+            <h4>Top 10 Places to Visit</h4>
+
+            <ol>
+                <li>Oia Village</li>
+                <li>Fira Town</li>
+                <li>Red Beach</li>
+                <li>Kamari Beach</li>
+                <li>Perissa Beach</li>
+                <li>Akrotiri Archaeological Site</li>
+                <li>Ancient Thera</li>
+                <li>Imerovigli Village</li>
+                <li>Amoudi Bay</li>
+                <li>Nea Kameni Volcano</li>
+            </ol>
+
+            <a href="destination.html" class="btn btn-primary">
+                Plan Another Trip
+            </a>
+
+        </section>
+
+        <hr>
+
+
+        <!-- =====================================
+             BARCELONA
+        ===================================== -->
+
+        <section id="barcelona" class="mb-5 mt-5">
+
+            <h2>Barcelona, Spain</h2>
+
+            <div class="text-center mb-4">
+
+                <img id="slikaBarcelona"
+                     src="images/barcelona.jpg"
+                     class="img-fluid mb-3"
+                     width="600"
+                     alt="Barcelona">
+
+                <!-- BUTTONS -->
+
+                <div class="row mt-3">
+
+                    <div class="col-6 text-left">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="prethodnaSlika('barcelona')">
+                            Previous
+                        </button>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="slednaSlika('barcelona')">
+                            Next
+                        </button>
+
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="likeBarcelona()">
+                            Like
+                        </button>
+                        <span id="likesBarcelona">0</span>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="dislikeBarcelona()">
+                            Dislike
+                        </button>
+                        <span id="dislikesBarcelona">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Barcelona is a popular city in Spain,
+                famous for its architecture, beaches,
+                culture and lively streets.
+                It offers a combination of historical
+                attractions and modern city life.
+            </p>
+
+            <h4>Top 10 Places to Visit</h4>
+
+            <ol>
+                <li>Sagrada Familia</li>
+                <li>Park Guell</li>
+                <li>Casa Batllo</li>
+                <li>La Rambla</li>
+                <li>Gothic Quarter</li>
+                <li>Barceloneta Beach</li>
+                <li>Montjuic Castle</li>
+                <li>Casa Mila</li>
+                <li>Boqueria Market</li>
+                <li>Arc de Triomf</li>
+            </ol>
+
+            <a href="destination.html" class="btn btn-primary">
+                Plan Another Trip
+            </a>
+
+        </section>
+
+        <hr>
+
+
+        <!-- =====================================
+             LONDON
+        ===================================== -->
+
+        <section id="london" class="mb-5 mt-5">
+
+            <h2>London, United Kingdom</h2>
+
+            <div class="text-center mb-4">
+
+                <img id="slikaLondon"
+                     src="images/london.jpg"
+                     class="img-fluid mb-3"
+                     width="600"
+                     alt="London">
+
+                <!-- BUTTONS -->
+
+                <div class="row mt-3">
+
+                    <div class="col-6 text-left">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="prethodnaSlika('london')">
+                            Previous
+                        </button>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="slednaSlika('london')">
+                            Next
+                        </button>
+
+                    </div>
+
+                    <div class="col-6 text-right">
+
+                        <button class="btn btn-secondary btn-sm"
+                                onclick="likeLondon()">
+                            Like
+                        </button>
+                        <span id="likesLondon">0</span>
+
+                        <button class="btn btn-primary btn-sm"
+                                onclick="dislikeLondon()">
+                            Dislike
+                        </button>
+                        <span id="dislikesLondon">0</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                London is the capital of the United Kingdom.
+                It is famous for its historical landmarks,
+                museums, parks and cultural attractions.
+                Visitors can enjoy both traditional
+                British culture and modern city life.
+            </p>
+
+            <h4>Top 10 Places to Visit</h4>
+
+            <ol>
+                <li>Big Ben</li>
+                <li>Buckingham Palace</li>
+                <li>Tower of London</li>
+                <li>Tower Bridge</li>
+                <li>London Eye</li>
+                <li>British Museum</li>
+                <li>Hyde Park</li>
+                <li>Westminster Abbey</li>
+                <li>Natural History Museum</li>
+                <li>Camden Market</li>
+            </ol>
+
+            <a href="destination.html" class="btn btn-primary">
+                Plan Another Trip
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="text-white text-center p-3">
+
+        <img src="images/footer.jpg"
+             alt="Explore the World"
+             class="footer-slika">
+
+        <p>Discover new places and create unforgettable memories.</p>
+        <p>2026 Travel Planner</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="proekt.js"></script>
+
+</body>
+</html>
+
+
